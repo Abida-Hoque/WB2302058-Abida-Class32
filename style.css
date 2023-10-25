@@ -1,0 +1,73 @@
+.box1{
+    margin: 70px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    /*transform: translate(100px,150px);*/
+}
+.rotate{
+    background-color: red;
+    color: #fff;
+    transform: rotate(45deg);
+}
+.scale{
+    background-color:antiquewhite;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    transform: scale(1,1);
+}
+.skewX{
+    background-color:aquamarine;
+    transform: skewX(30deg);
+}
+.skewY{
+    background-color:chocolate;
+    transform: skewY(30deg);
+}
+.rotateZ{
+    background-color: darkolivegreen;
+    transform: rotateZ(30deg);
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    transition: width 3s,height 5s;
+    transition-delay: 4s;
+}
+.box:hover{
+    background-color: green;
+    color: #fff;
+    width: 250px;
+    height: 250px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    background-color: green;
+    position: relative;
+    animation: testA 5s linear 3s infinite alternate;
+    /*animation-direction: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    animation-direction: alternate;*/
+}
+@keyframes testA{
+    0%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: blue;
+        left: 100px;
+        top: 0;
+    }
+} 
